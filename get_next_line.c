@@ -32,7 +32,8 @@ static int			ft_check_bucket(char **bucket, char **line)
 		{
 			*line = ft_strsub((char const*)*bucket, 0, a - *bucket);
 			ft_memmove(*bucket, a + 1, ft_strlen(a));
- 		}
+			return (1);
+		}
 	}
 	return (0);
 }
