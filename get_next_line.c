@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-static char		*loc_pointer_chr(const char *s, int c)
+static char			*loc_pointer_chr(const char *s, int c)
 {
 	while (*s != (char)c && *s != '\0')
 		s++;
